@@ -30,8 +30,8 @@ QT += \
     greaterThan(QT_MAJOR_VERSION, 4) { #Qt5
         # For using the self-compiled phonon4qt5, in this case,
         # the pri file may be not in standard location, so include it here:
-        !isEmpty(PHONON_PRI){ 
-          exists($${PHONON_PRI}/qt_phonon4qt5.pri):include($${PHONON_PRI}/qt_phonon4qt5.pri)
+        !isEmpty(PHONON_PRI_DIR){ 
+          exists($${PHONON_PRI_DIR}/qt_phonon4qt5.pri):include($${PHONON_PRI_DIR}/qt_phonon4qt5.pri)
          }
         QT += phonon4qt5
         LIBS += -lphonon4qt5
